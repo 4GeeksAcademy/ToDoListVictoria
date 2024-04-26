@@ -32,7 +32,7 @@ export const ToDoList = () => {
         <ul className="list-group mt-2">       
           {list.map((item, id) => <li key={id} className="list-group-item d-flex justify-content-between hidden-icon">
             {item}
-            <span id="trash" onClick={() => deletetask(item)}>
+            <span onClick={() => deleteTask(item)}>
               <i className="fas fa-trash text-danger"></i>
             </span>
                        
